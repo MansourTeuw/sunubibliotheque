@@ -1,0 +1,39 @@
+<nav class="navbar bg-dark">
+  <div class="container-fluid">
+    <a href="" style="color: white; margin-left: 45%">DETAILS DU LIVRE</a>
+    <button routerLink="/Admin/ajouter-livre" class="btn btn-success">Retour</button>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <table class="table mt-4 table-striped table-bordered">
+    <thead>
+    <tr>
+      <th scope="col">Image</th>
+      <th scope="col">ISBN</th>
+      <th scope="col">Titre</th>
+      <th scope="col">Prix</th>
+      <th scope="col">Categorie</th>
+      <th scope="col">Description</th>
+      <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of livre">
+      <td>
+        <img src="{{ item.lien }}" alt="{{ item.titre }}" />
+      </td>
+      <td>{{ item.isbn }}</td>
+      <td>{{ item.titre }}</td>
+      <td>{{ item.prix }}</td>
+      <td>{{ item.categorie }}</td>
+      <td>{{ item.description }}</td>
+      <td>
+        <i routerLink="/Admin/modifier-livre/{{ item.id }}" class="fa fa-edit"></i
+        >&nbsp;
+        <i (click)="supprimerLivre(item.id)" class="fa fa-trash"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

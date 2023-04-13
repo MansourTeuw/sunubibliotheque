@@ -1,0 +1,59 @@
+<nav class="navbar bg-dark">
+  <div class="container-fluid">
+    <a href="" style="color: white; margin-left: 45%">Modifier Livre</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+
+          <div class="form-group">
+            <label>ISBN</label>
+            <input type="text" [ngModel]="livre.isbn" class="form-control" name="isbn" #isbn="ngModel" ngModel placeholder="Saisir ISBN" required />
+          </div>
+
+          <div class="form-group">
+            <label>Titre</label>
+            <input type="text" [ngModel]="livre.titre" class="form-control" name="titre" #titre="ngModel" ngModel placeholder="Saisir titre du livre" required />
+          </div>
+
+          <div class="form-group">
+            <label>Prix</label>
+            <input type="number" [ngModel]="livre.prix" class="form-control" name="prix" #prix="ngModel" ngModel placeholder="Saisir prix du livre" required />
+          </div>
+
+          <div class="form-group">
+            <label>Catégorie</label>
+            <select class="form-control" [ngModel]="livre.categorie" name="categorie" #categorie="ngModel" ngModel required>
+              <option value="">Selectionner une categorie...</option>
+              <option value="Science">Science</option>
+              <option value="Littérature">Littérature </option>
+              <option value="Fiction">Fiction</option>
+              <option value="Religion">Religion</option>
+              <option value="Langue">Langue</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Lien Image</label>
+            <input type="text" [ngModel]="livre.lien" class="form-control" name="lien" #lien="ngModel" ngModel placeholder="Saisir lien du livre" required />
+          </div>
+
+          <div class="form-group">
+            <label>Description</label>
+            <textarea class="form-control" [ngModel]="livre.description" name="description" #description="ngModel" ngModel id="" placeholder="Saisir description du livre" required></textarea>
+          </div>
+
+          <div class="buttons">
+            <button (click)="modifier()" type="submit" class="btn btn-primary">Modifier Livre</button>
+            <button routerLink="Admin/voir-livre" type="submit" class="btn btn-success">
+              Retour
+            </button>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+<!-- app.component.html -->
+<div class="hero-section">
+  <!-- Jumbotron -->
+  <div class="p-5 text-center bg-image rounded-3" style="
+    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+    height: 400px;
+  ">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1>Bienvenue sur  SUNU BIBLIOTHEQUE</h1>
+          <h4 class="mb-3">Find your next favorite book today</h4>
+          <a class="btn btn-outline-light btn-lg" href="#!" role="button">Naviger Dans Vos Rêves </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+
+
+
+</div>
+
+<div class="container-fluid">
+  <table class="table mt-4 table-striped table-bordered">
+    <thead>
+    <tr>
+      <th scope="col">Image</th>
+      <th scope="col">ISBN</th>
+      <th scope="col">Titre</th>
+      <th scope="col">Prix</th>
+      <th scope="col">Categorie</th>
+      <th scope="col">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of livre">
+      <td>
+        <img src="{{ item.lien }}" alt="{{ item.titre }}" />
+      </td>
+      <td>{{ item.isbn }}</td>
+      <td>{{ item.titre }}</td>
+      <td>{{ item.prix }}</td>
+      <td>{{ item.categorie }}</td>
+      <td>{{ item.description }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--<footer class="footer">-->
+<!--  <div class="container">-->
+<!--    <div class="row">-->
+<!--      <div class="col-md-4">-->
+<!--        <h3>SUNU BIBLIOTHEQUE</h3>-->
+<!--        <p>123 Main St, Suite 200</p>-->
+<!--        <p>City, State Zip</p>-->
+<!--        <p>Phone: 555-555-5555</p>-->
+<!--        <p>Email: info@sububiblio.com</p>-->
+<!--      </div>-->
+<!--      <div class="col-md-4">-->
+<!--        <h3>Liens Utils</h3>-->
+<!--        <ul>-->
+<!--          <li><a href="#">Accueil</a></li>-->
+<!--          <li><a href="#">Apropos</a></li>-->
+<!--          <li><a href="#">Contact Us</a></li>-->
+<!--          <li><a href="#">FAQ</a></li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--      <div class="col-md-4">-->
+<!--        <h3>Nous suivres</h3>-->
+<!--        <ul>-->
+<!--          <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>-->
+<!--          <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>-->
+<!--          <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>-->
+<!--          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</footer>-->
+
+

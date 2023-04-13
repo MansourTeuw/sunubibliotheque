@@ -1,1 +1,132 @@
 /* You can add global styles to this file, and also import other style files */
+.navbar-expand-lg {
+  margin-bottom: 60px;
+}
+.hero-section,
+#apropos {
+  margin-top: 160px;
+}
+
+#ajouter {
+  margin: 50px 0;
+}
+
+#formContainer {
+  margin-top: 50px;
+  width: 800px;
+}
+
+.card {
+  top: 50%;
+  left: 100%;
+  width: 465px;
+  padding: 31px 40px;
+  transform: translate(-50%, -50%);
+}
+
+.buttons button {
+  margin-right: 50px;
+}
+
+.form-control {
+  pad: 10px;
+}
+
+.form-group {
+  pad: 3px;
+}
+
+.fa-edit {
+  color: orange;
+}
+
+.fa-trash {
+  color: red;
+}
+
+img {
+  width: 156px;
+  height: 95px;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer ul li a i {
+  font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+  .footer h3 {
+    margin-top: 0;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
+
+  .footer ul li {
+    margin-bottom: 5px;
+  }
+
+  .footer ul li a i {
+    font-size: 1.5rem;
+  }
+}
+
+.fa {
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 0 5px;
+}
+
+
+/*Apropos */
+
+.card {
+  max-width: 250px;
+  margin: auto;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
+
+

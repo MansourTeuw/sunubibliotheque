@@ -1,0 +1,21 @@
+Ceci est un  mini projet porte le nom de SUNU BIBLIOTHEQUE.
+Pour le Backend, nous avons utiliser le json-server pour pouvoir stocker et manipuler des donnees.
+comme decrit dans les termes de reference, nous avons essaye de respecter les consignes donnes.
+Pour ce faire, il faut naviger dans le drepertoire principar et installer le json-server a l'aide des commandes suivantes:
+
+1. npm install -g json-server                    pour installer
+2. json-server --watch db.json                    pour demarrer le server en generant automatique une base de donnees nommee db.json
+3. Ensuite cliquer sur: http://localhost:3000     pour l'ancer l'interface du server
+
+Voir plus: https://www.npmjs.com/package/json-server
+
+Le project consiste de plusieur composant a savoir:
+- Un component Accueil pour la presentation des livres. Une fois sur cette premiere page, les utiliateurs auront la possibilite
+de voir tous les livres et leurs details.
+- Un component Apropos pour la presentation de la maison d'edition
+- Un component Contact pour contacter la maison.
+
+Un repertoir 'Admin/' pour la partie CRUD avec des composant comme:
+- Un component Ajouter-livre pour ajouter des livres: http://localhost:4400/Admin/ajouter-livre
+- Un component Modifier-livre
+- Un component Voir-livre
